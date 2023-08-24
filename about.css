@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 18px;
+}
+
+
+body {
+    background-color: #662d91; 
+    color: #fff;
+}
+
+
+header {
+    background-color:transparent; 
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+#check{
+    display:none;
+}
+.checkbtn{
+    font-size: 30px;
+    color:#0a53ffc0;
+    cursor: pointer;
+    margin-right: 20px;
+    display:none;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-right: 150px;
+    margin-left: auto;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    z-index: 1002;
+}
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    margin-right: 150px;
+    margin-left: auto;
+    margin-bottom: 30px;
+    padding-top: 25px;
+}
+
+
+.nav-links li {
+    margin-right: 20px;
+    position: relative;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 19px;
+   
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9900;
+}
+.nav-links a.active {
+    color: #ff9900; 
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Section styles */
+.about-section {
+    padding: 100px 0;
+    
+}
+.about-section img{
+    width:90px;
+    height: auto;
+    margin-right: 20px;
+    margin-top: -120px;
+    padding: -90px;
+
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    text-align: center; 
+}
+
+.contact-button {
+    background-color: #eac79e; 
+    color: #102C57; 
+    padding: 15px 30px;
+    font-size: 18px; 
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    border-radius: 8px;
+}
+
+.contact-button:hover {
+    background-color: #FF6600; 
+    color: #fff
+}
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #EADBC8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FF6600;
+}
+
+
+.about-section {
+    background: linear-gradient(rgba(0,0,0,0.7), #3551b5), url('your-background-image.jpg') center/cover no-repeat;
+    padding: 100px 0;
+    padding-left: 10px;
+}
+
+
+.about-section h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+
+.about-section p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+

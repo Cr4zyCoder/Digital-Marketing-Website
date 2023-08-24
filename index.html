@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@600&display=swap" rel="stylesheet">
+    
+
+    <title>MarketBoost</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            
+            <div class="logo"><img src="resource/logo.png" alt="Market Boost"></div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class='bx bx-menu'></i></label>
+            <div class="toggle"></div>
+            <ul class="nav-links">
+                <li><a href="index.html#home" class="active">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact_form.html">Contact Us</a></li>
+            </ul>
+            
+        </nav>
+        
+        
+    </header>
+    
+    
+    <section class="hero">
+      <div class="container">
+          <div class="hero-content">
+              <div class="text">
+                 <h2 class="branding-name">MARKET BOOST</h2>
+                  <h1>Digital Marketing Agency that delivers!</h1>
+                  <p>At Market Boost, we specialize in crafting tailored digital marketing solutions that drive 
+                    <p>real results. With a keen understanding of the ever-evolving digital landscape, we harness </p>
+                  <p> the power of data-driven strategies, innovative thinking, and creative prowess to catapult  </p>
+                <p>your brand to new heights. Clear tangible goals by solving bottlenecks and impactful </p>
+              <p>creativity.</p></p>
+                  
+              </div>
+              <div class="image">
+                  <img src="resource/The-Use-of-Animation-in-Digital-Marketing-cutout.png" alt="Digital Marketing Image">
+              </div>
+          </div>
+      </div>
+  </section>
+
+<section id="services" class="service-section">
+    <div class="container">
+        <h2>Services We Offer.</h2>
+        <h3>Our forte lies in diagnosing issues, reverse engineering the top performer and creating impactful campaigns that are creative and driver conversions.</h3>
+        <div class="service-boxes">
+            <div class="service-box">
+                <img src="resource/content marketing.png" alt="">
+                <h3>Content Marketing</h3>
+                <p>Creating content that drives traffic, earns authority links, and builds a loyal audience and brand recall.</p>
+            </div>
+            <div class="service-box">
+                <img src="resource/socialmediamarketing-cutout.png" alt="">
+                <h3>Social Media Marketing</h3>
+                <p>Creative, engaging paid and organic social media marketing through story telling, humour and empathy.</p>
+            </div>
+            <div class="service-box">
+                <img src="resource/branding-cutout.png" alt="">
+                <h3>Branding</h3>
+                <p>Branding at scale through media buying, creative campaigns and high impact advertising.</p>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+<section  class="contact-section">
+    <div class="container">
+        <h2>Have questions or inquiries? Feel free to get in touch with us. We're here to help!</h2>
+        <div class="contact-form">
+            <button  class="contact-button"><a href="contact_form.html">Contact Us</a></button>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-gmail' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script  src="script.js"></script>
+<script>
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50, 
+                    behavior: 'smooth',
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>

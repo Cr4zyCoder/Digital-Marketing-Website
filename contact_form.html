@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="con_style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class='bx bx-menu'></i></label>
+            <div class="toggle"></div>
+            <ul class="nav-links">
+                <li><a href="index.html#home" >Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact_form.html" class="active">Contact Us</a></li>
+            </ul>
+            
+        </nav>
+        
+            
+        
+    </header>
+    <div class="hero">
+        <div class="logo">
+            <img src="resource/logo.png" alt="Logo">
+            <h2>Let's work together</h2>
+            <p>Submit your details for a callback.</p>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.878555689782!2d77.63293107523356!3d12.915526187394658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1522082a2b17%3A0xc1a59efad0e9e253!2sTeachnook!5e0!3m2!1sen!2sin!4v1692542039781!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            <h4>Check us out here <i class='bx bxs-up-arrow-alt'></i></h4>
+            <div class="info">
+                <ul class="inform">
+                    <li><a href="#"><i class='bx bxs-location-plus'></i>Reach us</a></li>
+                    <li><a href="#"><i class='bx bxs-phone-call' ></i>+91 00000 00000</a></li>
+                    <li><a href="#"><i class='bx bx-mail-send'></i>xyz@gh.com</a></li></ul>
+            </div>
+            
+            
+        </div>
+        <form>
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                <label for="name"><i class='bx bx-user'></i> Full Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="number" required>
+                <label for="number"><i class='bx bx-phone'></i> Phone Number</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" required>
+            <label for="email"><i class='bx bxs-envelope'></i> Business Email</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="company" required>
+            <label for="company"><i class='bx bxs-building'></i> Company</label>
+            </div>
+            <div class="input-group">
+                <textarea id="tell us about your project"  rows="9" required></textarea>
+            <label for="tell us about your project"><i class='bx bxs-message-rounded-minus'></i> Tell us about your project</label>
+            </div>
+            <button type="submit"><i class='bx bxs-send'></i> SUBMIT</button>
+            
+
+        </form>
+
+   
+    </div>
+    <div class="info">
+                <ul class="inform">
+                    <li><a href="#"><i class='bx bxs-location-plus'></i>Reach us</a></li>
+                    <li><a href="#"><i class='bx bxs-phone-call' ></i>+91 00000 00000</a></li>
+                    <li><a href="#"><i class='bx bx-mail-send'></i>xyz@gh.com</a></li></ul>
+            </div>
+    
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+    
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 50, 
+                        behavior: 'smooth',
+                    });
+                }
+            });
+        });
+    </script>
+
+
+</body>
+</html>

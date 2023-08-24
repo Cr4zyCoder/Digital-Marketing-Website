@@ -1,0 +1,294 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #662d91;
+}
+#check{
+    display:none;
+}
+.checkbtn{
+    font-size: 30px;
+    color:#0a53ffc0;
+    cursor: pointer;
+    margin-right: 20px;
+    display:none;
+}
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.hero {
+    background-color: #662d91;
+    color: #fff;
+    padding: 130px 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    text-align: left;
+    margin-right: 20px;
+    flex: -1;
+}
+
+.text h1 {
+    font-size: 36px;
+    margin-top: -55px;
+    padding-left: 17px;
+    
+}
+
+.text p {
+    font-size: 18px;
+    margin-top: 10px;
+    padding-left: 17px;
+}
+
+.branding-name {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 70px;
+    margin-top: -12px;
+    padding-left: 17px;
+}
+.image{
+    flex:1;
+    text-align: right;
+}
+.image img {
+    max-width: 500px;
+    height: auto;
+
+}
+
+@media screen and (max-width: 768px) {
+    .checkbtn {
+        display: block;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #662d91;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 120px; 
+    height: auto;
+    padding-left:140px ;
+    padding-top: 5px   ;
+}
+
+.toggle {
+    width: 30px;
+    height: 25px;
+    background-color: transparent;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle div {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    margin: 2px 0;
+    transition: all 0.3s ease;
+}
+
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-right: 150px;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    position: relative;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 19px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9900;
+}
+.nav-links a.active {
+    color: #ff9900; 
+}
+
+
+.service-section {
+    background: radial-gradient(circle at 10% 20%, rgb(236, 158, 248) 0%, rgb(131, 83, 241) 90.1%); 
+    padding: 10px 0;
+}
+
+.service-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #102C57;
+    
+}
+.service-section h3{
+    color: #102C57;
+}
+
+.service-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    flex: 0 1 calc(33.33% - 20px);
+    background-color: #DAC0A3; 
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+.service-box:hover {
+    background-color: #FFA500; 
+}
+
+.service-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #102C57;
+}
+.service-box img {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%; 
+    height: auto;
+}
+
+
+
+.contact-section {
+    background-color: #662d91;
+    padding: 40px 0;
+    margin-top: -0px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: -30px;
+    color: white;
+}
+
+.contact-form {
+    text-align: center; 
+}
+
+.contact-button {
+    background-color: #eac79e;
+    color: #102C57; 
+    padding: 15px 30px; 
+    font-size: 18px; 
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    border-radius: 8px;
+}
+
+.contact-button:hover {
+    background-color: #FF6600; 
+    color: #fff
+}
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #EADBC8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FF6600; 
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .toggle {
+        display: flex;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        opacity: 0.95;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.3s ease;
+    }
+    
+    .nav-links.active {
+        transform: scaleY(1);
+    }
+    
+    .nav-links li {
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .nav-links a {
+        color: #fff;
+        transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+        color: #ff9900;
+    }
+}
